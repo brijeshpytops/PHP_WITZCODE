@@ -26,4 +26,8 @@ Route::get('/blog/{blog_id?}/category/{category_id?}', function (string $blog_id
 // Laravel Rout Constraints
 // Laravel Named Routes
 
-Route::view('/about', 'about_view');
+
+Route::get('/page/about-us', function(){
+    return 'about-page';
+})->name("about");
+// Route::view('/about', 'about_view');
